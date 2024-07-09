@@ -11,10 +11,7 @@
         <div class="container">
             <h1>Smile Bakers</h1>
             <p>Made with Love</p>
-            <form method="get" action="/search">
-                <input type="text" name="query" id="searchBar" placeholder="Search for cakes...">
-                <button type="submit">Search</button>
-            </form>
+            <!-- Your header content -->
         </div>
     </header>
     
@@ -26,13 +23,21 @@
     </section>
     
     <main class="container" id="productList">
-        {% for product in products %}
-            <div class="product-card">
-                <img src="{{ product.image }}" alt="{{ product.name }}">
-                <h2>{{ product.name }}</h2>
-                <p>{{ product.price }}</p>
-            </div>
-        {% endfor %}
+        <div class="product-card">
+            <img src="chocolate_cake.jpeg" alt="Chocolate Cake">
+            <h2>Chocolate Cake</h2>
+            <p>₹600</p>
+        </div>
+        <div class="product-card">
+            <img src="vanilla_cake.jpg" alt="Vanilla Cake">
+            <h2>Vanilla Cake</h2>
+            <p>₹500</p>
+        </div>
+        <div class="product-card">
+            <img src="strawberry_cake.jpg" alt="Strawberry Cake">
+            <h2>Strawberry Cake</h2>
+            <p>₹550</p>
+        </div>
     </main>
     
     <footer>
